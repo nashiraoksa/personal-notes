@@ -3,9 +3,9 @@ import React from 'react';
 function SearchBar({ search, onSearch }) {
   return (
     <form action="">
-      <input type="text" placeholder="Cari judul..." />
-      <button type="submit" className="note-header__search-button" onClick={() => onSearch(search)}>
-        Cari
+      <input type="text" placeholder="Search..." />
+      <button type="submit" onClick={() => onSearch(search)}>
+        <i class="fa fa-search"></i>
       </button>
     </form>
   );
